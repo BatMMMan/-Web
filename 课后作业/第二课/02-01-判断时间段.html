@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var time = prompt("请您输入时间：");
+       if ( parseInt(time) <= 24 && parseInt(time) >= 22 || parseInt(time) >= 1 && parseInt(time) <= 3) {
+                alert('深夜好');
+       } else if (parseInt(time) < 22 && parseInt(time) >= 18) {
+                alert('晚上好');
+       } else if (parseInt(time) < 18 && parseInt(time) >= 14) {
+                alert('下午好');
+       } else if (parseInt(time) < 14 && parseInt(time) >= 12) {
+                alert('中午好');
+       } else if (parseInt(time) < 12 && parseInt(time) >= 8) {
+                alert('早上好');
+       } else if (parseInt(time) < 8 && parseInt(time) > 3) {
+                alert('凌晨好');
+       } else {
+                alert('您输入的时间不在服务区');
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 算法：能被4整除且不能整除100的为闰年（如2004年就是闰年，1901年不是闰年）或者能被400整除的年份，也是闰年
+        // 1. 弹出prompt 输入框， 让用户输入年份，把这个值取过来保存到变量中
+        // 2. 使用if语句来半段是否是闰年，如果是闰年，就执行 if 大括号里面的输出语句，否则就执行 else 大括号里的语句
+        // 3. 一定要注意里面的且 && 还有或者 || 的写法，同时注意判断整除的方法是取余为0
+        var year = prompt('请您输入需要检测的年份：');
+        if (parseInt(year) % 4 == 0 && parseInt(year) % 100 != 0 || parseInt(year) % 400 == 0) {
+            alert(parseInt(year) + '年是闰年。');
+        } else {
+            alert(parseInt(year) + '年是平年。');
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
