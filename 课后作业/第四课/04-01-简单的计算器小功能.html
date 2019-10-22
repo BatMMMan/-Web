@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    do {
+        var typeid = prompt('请输入您需要进行的计算：\n 1.+ \n 2.- \n 3.* \n 4. /');
+        if ((typeid < 1) || (typeid > 4)) {
+            break;
+        }
+        var num1 = prompt('请输入您需要计算的第一个数字:');
+        var num2 = prompt('请输入您需要计算的第二个数字:');
+        // 写一个函数，用户输入任意两个数字的任意算术运算（简单的计算器小功能），并能弹出运算后的结果
+        function getResult(num3, num4) {
+            return [num3 + num4, num3 - num4, num3 * num4, num3 / num4];
+        }
+        var result = getResult(parseFloat(num1), parseFloat(num2));
+        switch (parseInt(typeid)) {
+            case 1:
+                alert(result[0]);
+                break;
+            case 2:
+                alert(result[1]);
+                break;
+            case 3:
+                alert(result[2]);
+                break;
+            case 4:
+                alert(result[3]);
+                break;
+            default:
+                break;
+        }
+    } while (typeid < 5)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
