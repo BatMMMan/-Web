@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 利用 new Object 创建对象
+        var obj = new Object(); //创建了一个空的对象
+        obj.uname = '张三疯';
+        obj.age = 18;
+        obj.sex = '男';
+        obj.sayHi = function() {
+            console.log('hi~');
+            
+        }
+        // (1) 我们是利用 等号 = 赋值的方法 添加对象的属性和方法
+        // (2) 每个属性和方法直接用分号结束
+        console.log(obj.uname);
+        console.log(obj['sex']);
+        obj.sayHi();
+        
+        // 课堂练习
+        var people = new Object();
+        people.name = '鸣人';
+        people.sex = '男';
+        people.age = 19;
+        people.useSkill = function() {
+            console.log('多重影分身术');
+            
+        }
+        console.log(people.name);
+        console.log(people.sex);
+        console.log(people.age);
+        people.useSkill(); 
+                
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
