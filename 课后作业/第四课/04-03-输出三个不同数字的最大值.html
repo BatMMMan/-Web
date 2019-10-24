@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var num1 = prompt('请输入第一个数字：');
+        var num2 = prompt('请输入第二个数字：');
+        var num3 = prompt('请输入第三个数字：');
+    function getMax() {
+        var max = [num1, num2, num3];
+        for (var i = 1; i < 3; i++) {
+            if (max[i] < max[i + 1] ) {
+                return max[i + 1];
+            } else {
+                return max[i];
+            }
+        }
+    }
+    alert('最大值为：' + getMax(num1, num2, num3));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
