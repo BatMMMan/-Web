@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Car(weight, color, brand) {
+            this.weight = weight;
+            this.color = color;
+            this.brand = brand;
+            this.do = function() {
+                console.log('载人');
+                console.log('拉货');
+                console.log('耕田');
+            }
+
+        }
+        var F150 = new Car('3000kg', '深蓝色', '福特');
+        console.log(F150.weight);
+        console.log(F150.color);
+        console.log(F150.brand);
+        F150.do();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

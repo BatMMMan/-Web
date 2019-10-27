@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+         function Computer(color, weight, brand) {
+             this.color = color;
+             this.weight = weight;
+             this.brand = brand;
+             this.watch = function(movie) {
+                 console.log(movie);
+                 
+             }
+             this.listen = function(music) {
+                 console.log(music);
+                 
+             }
+             this.play = function(game) {
+                 console.log(game);
+                 
+             }
+             this.code = function(code) {
+                console.log(code);
+                
+             }
+         }
+        var dell = new Computer('红色', '2.25kg', 'Dell');
+        console.log(dell.color, dell.weight, dell.brand);
+        dell.watch('中国机长');
+        dell.listen('follow god');
+        dell.play('wow');
+        dell.code('JS');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Button(weight, height, bgc) {
+            this.weight = weight;
+            this.height = height;
+            this.bgc = bgc;
+            this.click = function() {
+                console.log('你好');
+                
+            }
+        }
+        var hello =new Button('200px', '200px', 'pink');
+        console.log(hello.weight, hello.height, hello.bgc);
+        hello.click();
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
